@@ -1,0 +1,122 @@
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../font/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat-regular;
+  src: url(../font/Montserrat-Regular.ttf);
+}
+.card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0.1rem 0.1rem 1rem 0.1rem hsl(234deg, 14%, 74%);
+}
+.card .card-title {
+  font-family: Montserrat-regular;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: hsl(233deg, 13%, 49%);
+  margin: 1rem 0;
+}
+.card .price {
+  font-family: Montserrat-Bold;
+  color: hsl(232deg, 13%, 33%);
+  border-bottom: solid 0.1rem hsl(234deg, 14%, 74%);
+  width: 100%;
+  padding: 0 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  gap: 0.3rem;
+}
+.card .price b {
+  font-size: 3.5rem;
+}
+.card .info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.card .info p {
+  border-bottom: solid 0.1rem hsl(234deg, 14%, 74%);
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  font-family: Montserrat-regular;
+  color: hsl(232deg, 13%, 33%);
+  font-weight: 900;
+}
+.card .btn {
+  border-radius: 0.5rem;
+  width: 100%;
+  background: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 1rem;
+  margin: 2rem 0 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.card .btn:hover {
+  border: solid 0.1rem hsl(234deg, 14%, 74%);
+  background: transparent;
+  color: hsl(237deg, 63%, 64%);
+  transition: ease 0.2s;
+}
+
+.professional {
+  background: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+}
+.professional .prof {
+  color: #fff;
+}
+.professional .price {
+  color: #fff;
+  border-bottom: solid 0.1rem hsl(240deg, 78%, 98%);
+}
+.professional .info p {
+  border-bottom: solid 0.1rem hsl(240deg, 78%, 98%);
+  color: #fff;
+}
+.professional .btn2 {
+  background: #fff;
+  color: hsl(237deg, 63%, 64%);
+}
+.professional .btn2:hover {
+  background-color: transparent;
+  color: #fff;
+  border: solid 0.1rem hsl(240deg, 78%, 98%);
+  transition: ease 0.2s;
+}
+
+@media (min-width: 800px) {
+  .card {
+    max-width: 30%;
+  }
+  .basic {
+    margin-right: 17rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .master {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  .professional {
+    position: absolute;
+    top: 0;
+    max-width: 27%;
+    padding: 2.5rem 1rem;
+    box-shadow: none;
+  }
+}

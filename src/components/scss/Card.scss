@@ -1,0 +1,108 @@
+@import 'config';
+
+.card{
+    @include card;
+    box-shadow: .1rem .1rem 1rem .1rem $Light-Grayish-Blue;
+    
+
+    .card-title{
+        font-family: $font;
+        font-size: 1.1rem;
+        font-weight: 900;
+        color: $Grayish-Blue;
+        margin: 1rem 0;
+    }
+
+    .price{
+        font-family: $fontBold;
+        color: $Dark-Grayish-Blue;
+        border-bottom: solid .1rem $Light-Grayish-Blue;
+        width: 100%;
+        padding: 0 0 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        gap: .3rem;
+        b{font-size: 3.5rem;}
+    }
+
+    .info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: .8rem;
+
+        p{
+            border-bottom: solid .1rem $Light-Grayish-Blue;
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0;
+            font-family: $font;
+            color: $Dark-Grayish-Blue;
+            font-weight: 900;
+        }
+    }
+
+    .btn{
+        @include btn;
+        &:hover{
+            border: solid .1rem $Light-Grayish-Blue;
+            background: transparent;
+            color: hsl(237, 63%, 64%);
+            transition: ease .2s;
+        }
+    }
+}
+
+.professional{
+    background: $Gradient;
+
+    .prof{
+        color: #fff;
+    }
+    .price{
+        color: #fff;
+        border-bottom: solid .1rem $Very-Light-Grayish-Blue;
+    }
+    .info{
+
+        p{
+            border-bottom: solid .1rem $Very-Light-Grayish-Blue;
+            color: #fff;
+        }
+    }
+    .btn2{
+        background: #fff;
+        color: hsl(237, 63%, 64%);
+        &:hover{
+            background-color: transparent;
+            color: #fff;
+            border: solid .1rem $Very-Light-Grayish-Blue;
+            transition: ease .2s;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .card{
+        max-width: 30%;
+    }
+
+    .basic{
+        margin-right: 17rem;
+        border-radius: .5rem 0 0 .5rem;
+    }
+    .master{
+        border-radius: 0 .5rem .5rem 0;
+    }
+    .professional{
+        position: absolute;
+        top: 0;
+        max-width: 27%;
+        padding: 2.5rem 1rem;
+        box-shadow: none;
+    }
+}

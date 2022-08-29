@@ -1,0 +1,41 @@
+$Gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+$Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+$Light-Grayish-Blue: hsl(234, 14%, 74%);
+$Grayish-Blue: hsl(233, 13%, 49%);
+$Dark-Grayish-Blue: hsl(232, 13%, 33%);
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../font/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Montserrat-regular;
+    src: url(../font/Montserrat-Regular.ttf);
+}
+$fontBold: Montserrat-Bold;
+$font: Montserrat-regular;
+
+@mixin card {
+    background-color: #fff;
+    border-radius: .5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+@mixin btn {
+    border-radius: .5rem;
+    width: 100%;
+    background: $Gradient;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 1rem;
+    margin: 2rem 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8rem;
+}
